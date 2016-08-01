@@ -1,0 +1,79 @@
+<div class="container">
+  <div class="jumbotron _jumbotron text-center">
+    <h2>Is Sachin the best cricketer in the world? Lets have a look!</h2>
+  </div>
+  <div class="panel panel-primary">
+    <div class="panel-heading text-center">
+        <h3>Sachin Ramesh Tendulkar</h3>
+    </div>
+    <div class="panel-body">
+      <div class="row">
+        <div class="container">
+          <div class="col-md-3 sachin-img">
+            <img src="assets/img/sachin.jpg" alt="Saching Profile Image" class="img-responsive"/>
+          </div>
+          <div class="col-md-3 panel-detail-tile">
+            <b>Born: </b> <span>April 24, 1973, Bombay (now Mumbai), Maharashtra</span>
+          </div>
+          <div class="col-md-3 panel-detail-tile">
+            <b>Age: </b> <span> 43 years</span>
+          </div>
+          <div class="col-md-3 panel-detail-tile">
+            <b>Nickname: </b> <span>Master Blaster, Little Master, Sachin</span>
+          </div>
+          <div class="col-md-3 panel-detail-tile">
+            <b>Batting Order: </b> <span>Top-order batsman</span>
+          </div>
+          <div class="col-md-3 panel-detail-tile">
+            <b>Batting Style: </b> <span>Right-hand Bat</span>
+          </div>
+          <div class="col-md-3 panel-detail-tile">
+            <b>Bowling Style: </b> <span> Right-arm offbreak, Legbreak googly</span>
+          </div>
+          <div class="col-md-3 panel-detail-tile">
+            <b>Height: </b> <span>5'5</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="row-fluid text-center">
+  <div class="container jumbotron _jumbotron" ng-init="vm.careerStats()">
+    <h2>Career Stats</h2>
+    <career-stats data="vm.stats"></career-stats>
+  </div>
+</div>
+
+<div class="row-fluid text-center">
+  <div class="container jumbotron _jumbotron" ng-init="vm.careerCenturies()">
+    <span ng-if="vm.century && vm.hcentury">
+      <century-stats centuries="vm.century" halfcenturies="vm.hcentury"></century-stats>
+    </span>
+  </div>
+</div>
+
+<div class="row-fluid text-center">
+  <div class="container jumbotron _jumbotron" ng-init="vm.losses()">
+    <span ng-if="vm.losses">
+      <loss-stats data="vm.losses"></loss-stats>
+    </span>
+  </div>
+</div>
+
+<div class="row-fluid text-center">
+  <div class="container jumbotron _jumbotron" ng-init="vm.won()">
+    <span ng-if="vm.wins">
+      <win-stats data="vm.wins"></win-stats>
+    </span>
+  </div>
+</div>
+
+<div class="row-fluid text-center">
+  <div class="container jumbotron  _jumbotron-success">
+    <h2>We can safely assume that Sachin IS a cricket GOD!</h2>
+  </div>
+</div>

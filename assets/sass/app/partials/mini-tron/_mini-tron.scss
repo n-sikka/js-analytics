@@ -1,0 +1,11 @@
+.mini-tron{
+  .panel-body {
+    background-color: #8BC34A;
+    transition: 0.2s all ease;
+    
+    &:hover {
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+      transition: 0.2s all ease;
+    }
+  }
+}

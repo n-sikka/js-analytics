@@ -1,0 +1,33 @@
+.table {
+  width:100%;
+  white-space: nowrap;
+}
+.nameCol {
+  width:100%;
+}
+.table td {
+  padding: 0 5px;
+}
+
+._jumbotron{
+  background-color: #fff;
+  padding-top: 15px;
+}
+
+._jumbotron-success {
+  background-color: #8BC34A;
+  padding-top: 40px;
+  color: #fff;
+}
+
+.sachin-img {
+  width: 16%;
+
+  img {
+    border-radius: 1rem;
+  }
+}
+
+.panel-detail-tile{
+  padding: 1rem;
+}
